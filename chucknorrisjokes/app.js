@@ -5,6 +5,7 @@ function getJokes(e) {
   const number = document.querySelector('input[type="number"]').value;
 
   const xhr = new XMLHttpRequest();
+  // fonerafsd
 
   xhr.open('GET', `http://api.icndb.com/jokes/random/${number}`, true);
 
@@ -25,7 +26,7 @@ function getJokes(e) {
       document.querySelector('.jokes').innerHTML = output;
     }
   }
-
+  
   xhr.send();
 
   e.preventDefault();
